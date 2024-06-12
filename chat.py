@@ -3,11 +3,6 @@ import time
 import openai
 from openai import OpenAI
 
-# Ysk-proj-4AABIYPFfxSjVPfNzlZrT3BlbkFJm21MURVcc0cGBNBlECen
-
-assistant_name = "My Assistant"
-assistant_description = "A helpful assistant for various tasks"
-model = "gpt-4-1106-preview"  
 client = OpenAI()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -25,7 +20,7 @@ def create_assistant():
 def chat_with_gpt(prompt):
 
     # Add user message to the thread (not used in this implementation)
-    my_thread_message = client.beta.threads.messages.create(
+    client.beta.threads.messages.create(
         thread_id=my_thread.id,
         role="user",
         content=prompt,

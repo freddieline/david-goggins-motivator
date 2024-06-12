@@ -1,6 +1,7 @@
 # david-goggins-motivator
 Provides intense, no-nonsense motivation like David Goggins.
 
+Based on the GPT https://chatgpt.com/g/g-UoXwwt8Ax-david-goggins-motivator
 
 ## Setup
 
